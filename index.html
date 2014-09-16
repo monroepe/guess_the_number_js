@@ -2,17 +2,30 @@
 <html>
   <head>
     <title>Guess the Number</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <div>
     <h1>Guess the Number Game!</h1>
+
+    <div>
       <form class="guess_form">
         Guess:<input type="text" placeholder = "1-100" id="guess"/>
         <input type="submit" value="Guess"/>
       </form>
     </div>
 
+    <div class="game_text">
+      <p id="special_text">Please Guess a Number</p>
+    </div>
+
+    <div>
+      <a href="#" class="button" id="play_again">Play Again?</a>
+    </div>
+
+    <script src="libs/jquery-1.10.2.js"></script>
     <script src="guess_the_number.js"></script>
   </body>
 </html>
